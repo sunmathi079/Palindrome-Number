@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int b,c=0;
+		Scanner Sc=new Scanner(System.in);
+		int a=Sc.nextInt();
+		int k=a;
+		while(a>0){
+		    b=a%10;
+		    c=(c*10)+b;
+		    a=a/10;
+		}
+		if(c==k){
+		    System.out.print("palindrome");
+		}
+		else{
+		    System.out.println("not a palindrome");
+		}
+	}
+}
